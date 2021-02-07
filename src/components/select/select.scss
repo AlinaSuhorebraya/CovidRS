@@ -1,0 +1,11 @@
+@import '../../global/variables.scss';
+
+select {
+  font-size: $text_extra_small;
+  background: none;
+  color: $white;
+
+  & option {
+    color: $black;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../global/variables";
+
+.button {
+  max-width: 27px;
+  max-height: 20px;
+  line-height: 18px;
+  font-size: $text_extra_small;
+  width: 100%;
+  height: 100%;
+  background: $gray-brown;
+  border-radius: 2px;
+
+  &:hover {
+    background: $light-gray;
+    color: $black-brown;
+  }
+}
+
+.indicator-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 70px;
+  width: 100%;
+
+  & label {
+    font-size: $text_extra_small;
+  }
+}

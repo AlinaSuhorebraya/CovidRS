@@ -1,0 +1,21 @@
+@import '../../global/mixin.scss';
+@import '../../global/variables.scss';
+
+.all-cases {
+  @include section;
+  flex-grow: 1;
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  span {
+    display: block;
+    font-size: $text_big;
+  }
+
+  .global-cases-number {
+    font-size: $text_big;
+    color: $luminescent-red;
+  }
+}
