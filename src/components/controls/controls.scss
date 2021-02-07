@@ -1,0 +1,20 @@
+@import '../../global/mixin.scss';
+@import '../../global/variables.scss';
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid $gray-brown;
+  padding: 5px;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.scale{
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
+  transform: scale(.8);
+}

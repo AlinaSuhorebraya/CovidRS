@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin section {
+  width: 97%;
+  border: 1px solid $gray-brown;
+  background: $black-brown;
+}
+
+@mixin caption {
+  @include flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 99%;
+
+  span {
+    color: $light-gray;
+  }
+}

@@ -1,0 +1,71 @@
+@import '../../global/mixin.scss';
+@import '../../global/variables.scss';
+
+.list-wrapper {
+  flex-grow: 5;
+  height: 200px;
+  width: 99%;
+  height: 200px;
+  @include flex;
+  flex-direction: column;
+  @include section;
+
+  .caption {
+    @include caption;
+  }
+
+  .search {
+    width: 95%;
+    position: relative;
+
+    input {
+      height: 30px;
+      width: 90%;
+      padding-left: 10px;
+      background: $black-brown;
+      border: 2px solid white;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 34px;
+      width: 30px;
+      background: $black-brown;
+      border: 2px solid white;
+    }
+  }
+
+  .select-list {
+    width: 90%;
+    height: 200px;
+    flex-grow: 1;
+    overflow-y: auto;
+
+    span {
+      cursor: pointer;
+      height: 35px;
+      display: block;
+      width: 100%;
+      @include flex;
+      border-bottom: 1px solid $gray-brown;
+
+      h5 {
+        text-align: start;
+
+        strong {
+          color: $luminescent-red;
+          font-size: $text_medium;
+        }
+
+        span {
+          font-size: $text_medium;
+          display: inline;
+          font-weight: 400;
+          border: none;
+        }
+      }
+    }
+  }
+}
